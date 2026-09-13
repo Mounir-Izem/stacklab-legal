@@ -6,7 +6,7 @@ title: "StackLab — Politique de confidentialité"
 
 # Politique de confidentialité — StackLab
 
-**Dernière mise à jour : 21 août 2026**
+**Dernière mise à jour : 13 septembre 2026**
 
 StackLab est une application de suivi de collection de métaux précieux, développée par StackWar. Cette politique décrit ce que l'application fait de vos données — et surtout ce qu'elle n'en fait pas.
 
@@ -38,10 +38,10 @@ Si vous refusez toute connexion, l'application reste utilisable : seuls les cour
 ## Vos sauvegardes
 
 - Les sauvegardes automatiques restent **dans l'espace privé de l'application**, sur votre appareil.
-- Les copies que vous exportez sont **chiffrées (AES-256-GCM)** avec des clés générées aléatoirement sur votre appareil. Vous seul détenez le kit de récupération qui permet de les ouvrir ailleurs.
+- Les copies que vous exportez sont **chiffrées** avec des clés générées aléatoirement sur votre appareil (ChaCha20-Poly1305 pour une copie complète, AES-256-GCM pour une copie de données seules). Vous seul détenez le kit de récupération qui permet de les ouvrir ailleurs.
 - Une copie ne quitte l'appareil que **par votre geste explicite** de partage, vers la destination que vous choisissez. Ce que devient cette copie chez ce destinataire (par exemple votre espace cloud personnel) relève de la politique de ce service, pas de la nôtre.
 - StackLab est **exclu de la sauvegarde cloud Android et du transfert automatique entre appareils** : rien ne part vers Google Drive à votre insu.
-- Limite à connaître : **les photos ne sont pas incluses dans les copies de sauvegarde** dans la version actuelle.
+- **Vos photos peuvent partir avec votre sauvegarde.** Au moment de l'export, vous choisissez : une copie complète, vos photos comprises, ou une copie légère, données seules. Avant toute restauration, l'application vous dit ce que le fichier contient. Les photos voyagent chiffrées, dans le même fichier, et ne transitent par aucun serveur.
 
 ## Ce que nous ne faisons pas
 
