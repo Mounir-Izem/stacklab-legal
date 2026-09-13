@@ -6,7 +6,7 @@ title: "StackLab — Privacy Policy"
 
 # Privacy Policy — StackLab
 
-**Last updated: August 21, 2026**
+**Last updated: September 13, 2026**
 
 StackLab is a precious-metals collection tracker developed by StackWar. This policy describes what the app does with your data — and above all, what it doesn't.
 
@@ -38,10 +38,10 @@ If you block all connectivity, the app remains usable — only live prices becom
 ## Your backups
 
 - Automatic backups stay **inside the app's private storage**, on your device.
-- Copies you export are **encrypted (AES-256-GCM)** with keys generated randomly on your device. You alone hold the recovery kit that can open them elsewhere.
+- Copies you export are **encrypted** with keys generated randomly on your device (ChaCha20-Poly1305 for a full copy, AES-256-GCM for a data-only copy). You alone hold the recovery kit that can open them elsewhere.
 - A copy only leaves the device through **your explicit share action**, to a destination you choose. What that destination (for example your personal cloud storage) does with the copy is governed by its own policy, not ours.
 - StackLab is **excluded from Android cloud backup and automatic device-to-device transfer**: nothing goes to Google Drive without your knowledge.
-- Known limitation: **photos are not included in backup copies** in the current version.
+- **Your photos can travel with your backup.** At export you choose: a full copy, photos included, or a light copy, data only. Before any restore, the app tells you what the file contains. Photos travel encrypted, inside the same file, and never pass through any server.
 
 ## What we don't do
 
