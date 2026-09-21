@@ -75,3 +75,5 @@ Toute évolution de l'application qui changerait ce qui précède sera reflété
 ## Contact
 
 Pour toute question sur cette politique ou sur vos données : **stacklabs.app@gmail.com**
+
+Éditeur : Mounir Izem, entrepreneur individuel exerçant sous le nom commercial StackWar, France. StackLab est un produit édité par StackWar.
