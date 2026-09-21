@@ -75,3 +75,5 @@ Any change to the app that would alter the above will be reflected here before i
 ## Contact
 
 For any question about this policy or your data: **stacklabs.app@gmail.com**
+
+Publisher: Mounir Izem, sole proprietor trading as StackWar, France. StackLab is a product published by StackWar.
