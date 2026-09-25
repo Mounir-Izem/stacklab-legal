@@ -6,7 +6,7 @@ title: "StackLab — Politique de confidentialité"
 
 # Politique de confidentialité — StackLab
 
-**Dernière mise à jour : 13 septembre 2026**
+**Dernière mise à jour : 25 septembre 2026**
 
 StackLab est une application de suivi de collection de métaux précieux, développée par StackWar. Cette politique décrit ce que l'application fait de vos données — et surtout ce qu'elle n'en fait pas.
 
@@ -19,9 +19,9 @@ StackLab est une application de suivi de collection de métaux précieux, dével
 
 ## Ce que l'application stocke, sur votre appareil uniquement
 
-- **Votre collection** : objets, prix d'achat, quantités, dates, notes, organisation en collections. Stockée dans une base de données locale, dans l'espace privé de l'application.
+- **Votre collection** : objets, prix d'achat, quantités, dates, notes, organisation en labs et en coffres. Stockée dans une base de données locale, dans l'espace privé de l'application.
 - **Vos photos d'objets** : enregistrées dans le stockage privé de l'application. Elles ne sont jamais envoyées nulle part et ne font l'objet d'aucune analyse ou reconnaissance d'image. Le cadrage d'une photo est réalisé entièrement sur l'appareil.
-- **Votre code PIN** (si vous activez le verrouillage) : conservé dans le stockage sécurisé du système (Android Keystore). Il ne quitte jamais l'appareil.
+- **Votre code PIN** (si vous activez le verrouillage) et **les clés de vos sauvegardes** : conservés dans le stockage sécurisé du système — Android Keystore sur Android, trousseau sur iPhone. Ils y sont marqués « cet appareil uniquement » : ni synchronisés vers un cloud, ni inclus dans une sauvegarde. Ils ne quittent jamais l'appareil.
 - **Vos réglages** : devise, unité de poids, langue, préférences de sauvegarde.
 - **L'historique public des cours** : les cours quotidiens de l'or et de l'argent, identiques pour tout le monde. Ce n'est pas une donnée personnelle — elle ne dit rien de ce que vous possédez.
 
@@ -40,7 +40,8 @@ Si vous refusez toute connexion, l'application reste utilisable : seuls les cour
 - Les sauvegardes automatiques restent **dans l'espace privé de l'application**, sur votre appareil.
 - Les copies que vous exportez sont **chiffrées** avec des clés générées aléatoirement sur votre appareil (ChaCha20-Poly1305 pour une copie complète, AES-256-GCM pour une copie de données seules). Vous seul détenez le kit de récupération qui permet de les ouvrir ailleurs.
 - Une copie ne quitte l'appareil que **par votre geste explicite** de partage, vers la destination que vous choisissez. Ce que devient cette copie chez ce destinataire (par exemple votre espace cloud personnel) relève de la politique de ce service, pas de la nôtre.
-- StackLab est **exclu de la sauvegarde cloud Android et du transfert automatique entre appareils** : rien ne part vers Google Drive à votre insu.
+- **Sur Android**, StackLab est **exclu de la sauvegarde cloud et du transfert automatique entre appareils** : rien ne part vers Google Drive à votre insu.
+- **Sur iPhone**, cette exclusion n'existe pas : si vous avez activé la sauvegarde iCloud, elle emporte les données de l'application comme celles de vos autres applications, chiffrées par Apple. Votre code PIN et vos clés, eux, en sont exclus.
 - **Vos photos peuvent partir avec votre sauvegarde.** Au moment de l'export, vous choisissez : une copie complète, vos photos comprises, ou une copie légère, données seules. Avant toute restauration, l'application vous dit ce que le fichier contient. Les photos voyagent chiffrées, dans le même fichier, et ne transitent par aucun serveur.
 
 ## Ce que nous ne faisons pas
@@ -50,18 +51,21 @@ Si vous refusez toute connexion, l'application reste utilisable : seuls les cour
 - Pas de vente, de partage ou de transmission de données à des tiers — nous n'avons rien à vendre : nous ne détenons rien.
 - Pas de rapport de plantage automatique dans la version actuelle. Si cela change un jour, ce sera indiqué ici **avant** l'activation, et sans jamais inclure de données de collection.
 
-Note : comme pour toute application distribuée par Google Play, Google peut nous transmettre des **statistiques agrégées et anonymes** (installations, plantages) issues des appareils dont les utilisateurs ont accepté ce partage avec Google. Nous n'y avons aucun accès individuel.
+Note : comme pour toute application distribuée par Google Play, Google peut nous transmettre des **statistiques agrégées et anonymes** (installations, plantages) issues des appareils dont les utilisateurs ont accepté de partager ces données d'usage avec Google. Nous n'y avons aucun accès individuel.
 
 ## Permissions
 
 - **Appareil photo / photos** : demandée uniquement au moment où vous ajoutez une photo, jamais avant. Un refus affiche un message clair et n'empêche rien d'autre.
+- **Face ID / empreinte** : demandée uniquement si vous choisissez de déverrouiller l'application autrement que par le code. La vérification est faite par le système ; l'application n'en reçoit que le résultat.
 
 ## Suppression de vos données
 
 Vos données vous appartiennent et leur suppression aussi :
 
-- l'application propose une suppression complète depuis les réglages ;
-- désinstaller l'application efface l'ensemble de ses données locales ;
+- depuis les réglages, **« Tout supprimer »** efface votre collection : labs, coffres, objets, instantanés de valeur et photos. Vos clés de sauvegarde et votre kit de récupération sont **volontairement conservés**, pour que les copies déjà exportées restent ouvrables ;
+- **désactiver le verrouillage** supprime votre code PIN ;
+- **l'effacement automatique**, si vous l'avez activé, va plus loin : après trop d'essais de code faux, il détruit aussi les clés de sauvegarde, le kit de récupération et les sauvegardes présentes sur l'appareil ;
+- **désinstaller l'application** efface ses données locales. Sur iPhone, le code PIN et les clés restent toutefois dans le trousseau du téléphone — c'est le comportement d'iOS pour toute application ;
 - il n'existe **aucune copie côté serveur** à supprimer — nous ne pouvons pas voir vos données, donc nous ne pouvons pas les conserver.
 
 ## Public concerné
