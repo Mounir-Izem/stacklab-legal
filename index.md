@@ -6,7 +6,7 @@ title: "StackLab — Politique de confidentialité"
 
 # Politique de confidentialité — StackLab
 
-**Dernière mise à jour : 1er novembre 2026**
+**Dernière mise à jour : 10 novembre 2026**
 
 StackLab est une application de suivi de collection de métaux précieux, développée par StackWar. Cette politique décrit ce que l'application fait de vos données — et surtout ce qu'elle n'en fait pas.
 
@@ -22,7 +22,7 @@ StackLab est une application de suivi de collection de métaux précieux, dével
 
 - **Votre collection** : objets, prix d'achat, quantités, dates, notes, organisation en labs et en coffres. Stockée dans une base de données locale, dans l'espace privé de l'application.
 - **Vos photos d'objets** : enregistrées dans le stockage privé de l'application. Elles ne sont jamais envoyées nulle part et ne font l'objet d'aucune analyse ou reconnaissance d'image. Le cadrage d'une photo est réalisé entièrement sur l'appareil.
-- **Votre code PIN** (si vous activez le verrouillage) et **les clés de vos sauvegardes** : conservés dans le stockage sécurisé du système — Android Keystore sur Android, trousseau sur iPhone. Ils y sont marqués « cet appareil uniquement » : ni synchronisés vers un cloud, ni inclus dans une sauvegarde. Ils ne quittent jamais l'appareil.
+- **Votre code PIN** (si vous activez le verrouillage) et **les clés de vos sauvegardes** : conservés dans le stockage sécurisé du système — sur Android, protégés à l'aide d'Android Keystore ; sur iPhone, dans le trousseau. L'application ne les envoie jamais nulle part. Les clés de vos sauvegardes sont marquées « cet appareil uniquement » : ni synchronisées vers un cloud, ni incluses dans une sauvegarde. Sur iPhone, dans la version 1.0.0 (12), votre code PIN n'a pas cette marque : une sauvegarde iCloud, ou une sauvegarde chiffrée sur ordinateur, peut l'emporter avec les données de l'application, chiffré par Apple.
 - **Vos réglages** : devise, unité de poids, langue, préférences de sauvegarde.
 - **Vos droits d'accès** (Gratuit, Silver, Gold, Ambassador) : une copie locale de ce que vous possédez, pour que l'application fonctionne hors ligne. Elle n'entre dans aucune sauvegarde et ne voyage jamais dans un fichier.
 - **L'historique public des cours** : les cours quotidiens de l'or et de l'argent, identiques pour tout le monde. Ce n'est pas une donnée personnelle — elle ne dit rien de ce que vous possédez.
@@ -72,7 +72,7 @@ Aucun compte, aucune synchronisation, aucun outil d'analyse d'usage, aucun rappo
 - Les copies que vous exportez sont **chiffrées** avec des clés générées aléatoirement sur votre appareil (ChaCha20-Poly1305 pour une copie complète, AES-256-GCM pour une copie de données seules). Vous seul détenez le kit de récupération qui permet de les ouvrir ailleurs.
 - Une copie ne quitte l'appareil que **par votre geste explicite** de partage, vers la destination que vous choisissez. Ce que devient cette copie chez ce destinataire (par exemple votre espace cloud personnel) relève de la politique de ce service, pas de la nôtre.
 - **Sur Android**, StackLab est **exclu de la sauvegarde cloud et du transfert automatique entre appareils** : rien ne part vers Google Drive à votre insu.
-- **Sur iPhone**, cette exclusion n'existe pas : si vous avez activé la sauvegarde iCloud, elle emporte les données de l'application comme celles de vos autres applications, chiffrées par Apple. Votre code PIN et vos clés, eux, en sont exclus.
+- **Sur iPhone**, cette exclusion n'existe pas : si vous avez activé la sauvegarde iCloud, elle emporte les données de l'application comme celles de vos autres applications, chiffrées par Apple. Vos clés de sauvegarde en sont exclues ; dans la version 1.0.0 (12), votre code PIN ne l'est pas.
 - **Vos photos peuvent partir avec votre sauvegarde.** Au moment de l'export, vous choisissez : une copie complète, vos photos comprises, ou une copie légère, données seules. Avant toute restauration, l'application vous dit ce que le fichier contient. Les photos voyagent chiffrées, dans le même fichier, et ne transitent par aucun serveur.
 - **Vos droits d'accès ne sont pas dans la sauvegarde** : ils se retrouvent par « Restaurer mes achats », pas par un fichier.
 
@@ -101,7 +101,7 @@ Quand vous nous contactez (e-mail, Discord de la bêta), nous recevons ce que vo
 Vos données vous appartiennent et leur suppression aussi :
 
 - depuis les réglages, **« Tout supprimer »** efface votre collection : labs, coffres, objets, instantanés de valeur et photos. Vos clés de sauvegarde et votre kit de récupération sont **volontairement conservés**, pour que les copies déjà exportées restent ouvrables. Vos achats ne sont pas touchés : ils vous appartiennent ;
-- **désactiver le verrouillage** supprime votre code PIN ;
+- **désactiver le verrouillage** désactive immédiatement la protection dans l'application. Dans la version 1.0.0 (12), cette action ne supprime pas le code PIN du stockage sécurisé du système ;
 - **l'effacement automatique**, si vous l'avez activé, va plus loin : après trop d'essais de code faux, il détruit aussi les clés de sauvegarde, le kit de récupération et les sauvegardes présentes sur l'appareil ;
 - **désinstaller l'application** efface ses données locales, y compris la copie locale de vos droits et l'identifiant technique anonyme. Sur iPhone, le code PIN et les clés restent toutefois dans le trousseau du téléphone — c'est le comportement d'iOS pour toute application. Vos achats se retrouvent avec « Restaurer mes achats » ;
 - **vos données d'achat chez RevenueCat** : écrivez-nous avec votre identifiant technique anonyme (visible dans la Boutique) et nous demandons leur suppression chez RevenueCat. Cette suppression efface la fiche anonyme et son historique chez RevenueCat ; elle n'annule aucun achat chez Apple ou Google, et un achat reste restaurable par votre compte de magasin. Pour un remboursement, adressez-vous à Apple ou à Google ;
