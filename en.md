@@ -6,7 +6,7 @@ title: "StackLab — Privacy Policy"
 
 # Privacy Policy — StackLab
 
-**Last updated: November 1, 2026**
+**Last updated: November 10, 2026**
 
 StackLab is a precious-metals collection tracker developed by StackWar. This policy describes what the app does with your data — and above all, what it doesn't.
 
@@ -22,7 +22,7 @@ StackLab is a precious-metals collection tracker developed by StackWar. This pol
 
 - **Your collection**: items, purchase prices, quantities, dates, notes, organisation into labs and cases. Stored in a local database inside the app's private storage.
 - **Your item photos**: saved in the app's private storage. They are never uploaded anywhere, and are never analysed or run through image recognition — photo framing happens entirely on the device.
-- **Your PIN** (if you enable App Lock) and **your backup keys**: kept in the system's secure storage — Android Keystore on Android, the keychain on iPhone. They are marked "this device only": never synced to any cloud, never included in a backup. They never leave the device.
+- **Your PIN** (if you enable App Lock) and **your backup keys**: kept in the system's secure storage — on Android, protected using Android Keystore; on iPhone, in the keychain. The app never sends them anywhere. Your backup keys are marked "this device only": never synced to any cloud, never included in a backup. On iPhone, in version 1.0.0 (12), your PIN does not carry that mark: an iCloud backup, or an encrypted computer backup, can carry it along with the app's data, encrypted by Apple.
 - **Your settings**: currency, weight unit, language, backup preferences.
 - **Your access rights** (Free, Silver, Gold, Ambassador): a local copy of what you own, so the app works offline. It is never included in a backup and never travels in a file.
 - **Public price history**: daily gold and silver prices, identical for everyone. This is not personal data — it says nothing about what you own.
@@ -72,7 +72,7 @@ No account, no sync, no usage analytics tool, no automatic crash reporting, no a
 - Copies you export are **encrypted** with keys generated randomly on your device (ChaCha20-Poly1305 for a full copy, AES-256-GCM for a data-only copy). You alone hold the recovery kit that can open them elsewhere.
 - A copy only leaves the device through **your explicit share action**, to a destination you choose. What that destination (for example your personal cloud storage) does with the copy is governed by its own policy, not ours.
 - **On Android**, StackLab is **excluded from cloud backup and from automatic device-to-device transfer**: nothing goes to Google Drive without your knowledge.
-- **On iPhone**, that exclusion does not exist: if you have iCloud Backup enabled, it takes the app's data along with your other apps', encrypted by Apple. Your PIN and your keys are excluded from it.
+- **On iPhone**, that exclusion does not exist: if you have iCloud Backup enabled, it takes the app's data along with your other apps', encrypted by Apple. Your backup keys are excluded from it; in version 1.0.0 (12), your PIN is not.
 - **Your photos can travel with your backup.** At export you choose: a full copy, photos included, or a light copy, data only. Before any restore, the app tells you what the file contains. Photos travel encrypted, inside the same file, and never pass through any server.
 - **Your access rights are not in the backup**: they come back through "Restore purchases", not through a file.
 
@@ -101,7 +101,7 @@ When you contact us (email, the beta Discord), we receive what you send: your ad
 Your data is yours, and so is its deletion:
 
 - from settings, **"Delete everything"** erases your collection: labs, cases, items, value snapshots, and photos. Your backup keys and your recovery kit are **deliberately kept**, so that copies you have already exported remain openable. Your purchases are untouched: they belong to you;
-- **disabling App Lock** removes your PIN;
+- **disabling App Lock** immediately disables protection in the app. In version 1.0.0 (12), this action does not delete the PIN from the system's secure storage;
 - **automatic wipe**, if you enabled it, goes further: after too many wrong PIN attempts, it also destroys the backup keys, the recovery kit, and the backups held on the device;
 - **uninstalling the app** erases its local data, including the local copy of your rights and the anonymous technical identifier. On iPhone, the PIN and the keys do however remain in the phone's keychain — that is how iOS behaves for any app. Your purchases come back with "Restore purchases";
 - **your purchase data at RevenueCat**: write to us with your anonymous technical identifier (shown in the Shop) and we will request its deletion at RevenueCat. This deletion erases the anonymous record and its history at RevenueCat; it cancels no purchase with Apple or Google, and a purchase remains restorable through your store account. For a refund, contact Apple or Google;
